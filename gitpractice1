@@ -5,3 +5,12 @@ It ensures ensures integrity.
 It is robust. That is, many users can access it. 
 
 what is the different between git and github? Git is a version control system while Github is cloud based hosting service. Github manage Git repositories and Git track source code history.
+
+45. Explain how controls are configured in git the remote repositories of your current project and why?
+Controls are configured using the git config command and can be used to add users to access the git repository.
+46.	Explain you git branching strategy?
+Our git branching strategy consist of a minimum of three branches, development, staging, and master. The development branch is used by programmer to develop the code, the staging branch is used to deploy on the testing server for testing, and the master branch is used to deploy on the live server. Additional branches are used for bugfixes and adding features as needed.
+47.	What is git bare and git nonbare repository, use cases?
+The git bare repository is a git repository without a working tree versus a git nonbare repository that has a working tree. Git bare repositories are used as a central repository for reference versus a git nonbare repositories are used normally track and commit changes in code.
+48.	What is the git command to create the achieve files?
+The git archive -o [name].zip HEAD command creates an achieve of the repository files.
