@@ -3,3 +3,5 @@ Git is a distributed version control system. It helps to provide software manage
 It enables versioning and collaboration. No servers needed.
 It ensures ensures integrity.
 It is robust. That is, many users can access it. 
+
+what is the different between git and github? Git is a version control system while Github is cloud based hosting service. Github manage Git repositories and Git track source code history.
