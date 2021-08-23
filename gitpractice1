@@ -6,6 +6,23 @@ It is robust. That is, many users can access it.
 
 what is the different between git and github? Git is a version control system while Github is cloud based hosting service. Github manage Git repositories and Git track source code history.
 
+29. How to change git commit message after push (given that no one pulled from remote)?
+   # git commit --amend -m "New Message"
+   # example : git commit --amend -m "This is an updated commit message"
+   # Good practice, write Good Commit Messages before committing
+
+Q30 How to rename the branch name?
+   # git branch -m <oldname> <newname>
+   # git branch -m <newname> if you are already in the in the branch.
+
+Q31 What is the command to get the code from remote git repo?
+   # git clone <<Git URL>>
+   # This command will get the code from repository into your local machine
+
+Q32 How to check the particular branch from github?
+   #git checkout <<Branch name>> 
+   #This will switch the branch.
+
 45. Explain how controls are configured in git the remote repositories of your current project and why?
 Controls are configured using the git config command and can be used to add users to access the git repository.
 46.	Explain you git branching strategy?
