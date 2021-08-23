@@ -23,6 +23,25 @@ Q32 How to check the particular branch from github?
    #git checkout <<Branch name>> 
    #This will switch the branch.
 
+Q41. What is merge confilts? Hqave you resolved any merge conflits in your projects?
+# Merge conflits is is an event that occurs when Git is unable to automatically resolve differences in code between two commits.
+# No we have not.
+
+Q42. How do we see many files are committed in a particular commit id?
+#git log
+
+Q43.What is github-webhook? can you name some git hooks?
+#Webhooks allow you to build or set up integrations, such as GitHub Apps or OAuth Apps, which subscribe to certain events on GitHub.com. When one of those events is triggered, we'll send a HTTP POST payload to the webhook's configured URL. Webhooks can be used to update an external issue tracker, trigger CI builds, update a backup mirror, or even deploy to your production server.
+
+#pre-commit: check the commit message for spelling errors.
+ pre-receive: enforce project coding standards.
+ post-commit: email/sms team members of a new commit.
+ post-receive: push the code to production.
+
+Q44. What is .gitignore file?
+# A . gitignore file is a plain text file where each line contains a pattern for files/directories to ignore.
+
+
 45. Explain how controls are configured in git the remote repositories of your current project and why?
 Controls are configured using the git config command and can be used to add users to access the git repository.
 46.	Explain you git branching strategy?
@@ -30,4 +49,4 @@ Our git branching strategy consist of a minimum of three branches, development, 
 47.	What is git bare and git nonbare repository, use cases?
 The git bare repository is a git repository without a working tree versus a git nonbare repository that has a working tree. Git bare repositories are used as a central repository for reference versus a git nonbare repositories are used normally track and commit changes in code.
 48.	What is the git command to create the achieve files?
-The git archive -o [name].zip HEAD command creates an achieve of the repository files.
+The git arc hive -o [name].zip HEAD command creates an achieve of the repository files.
