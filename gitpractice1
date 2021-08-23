@@ -22,6 +22,22 @@ Q31 What is the command to get the code from remote git repo?
 Q32 How to check the particular branch from github?
    #git checkout <<Branch name>> 
    #This will switch the branch.
+   
+   
+   
+
+Q37 In Which language is Git developed?
+   Git was designed and developed in C language by Linus Torvalds, the Linux software developer
+   
+Q38  What is the difference between git merge and git rebase?
+      Git merge allows you to merge branches from Git. only the target branch is changed, the source branch history remains i.e it preserve history of a branch.
+      Git rebase compresses all the changes into a single patch then integrate that patch into the target branch. Git rebase flatten history. The completed work is transfer from one branch to another and unwanted history are eliminated
+
+Q39   What is the difference between git reset and git revert?
+      Git Reset allows you to go back to a previous commit and it deleted or remove any other commit on its way back to our target commit. Git revert will help create a new commit with the previous commit that you are reverting to. it will not delete any other commit in-between the commit we want to change or alter
+
+Q40   Explain the git workflow?
+      Git workflow is a recipe or recommendation for how to use git to accomplish work in a consistent and productive manner. Examples of workflows are; Centralised, Feauture branching, Trunk based development, Forking
 
 Q41. What is merge confilts? Hqave you resolved any merge conflits in your projects?
 # Merge conflits is is an event that occurs when Git is unable to automatically resolve differences in code between two commits.
