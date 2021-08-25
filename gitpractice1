@@ -31,6 +31,35 @@ codebase — including its full version history — is mirrored on every develop
 Question 4 - What is the abbreviation of SCM?
 Source Code Management
 
+Question 5 -  Write down 5 SCM names?
+
+-Github
+-Gitlab
+-BitBucket (stash) 
+-SVN  = Sub version
+-CVS  = Concurrent version system
+-TFS  = Team Foundation Server 
+
+
+
+
+Question 6  What is git Branch?
+
+A branch is an independent line of operation. A git Branch is a command that lets you create, list, rename and delete branches. the command does not let you switch between branches or put a forked history back together again git branch is tightly integrated with the git checkout and git merge commands. Also it is the command that is used to show the branches in the local repository.
+
+
+Question 7  What is git tag?
+
+A Tag represents a version of a particular branch, Tagging is generally used to capture a point or version in history that is used for a marked version release. when tags are created they do not have further history of commit because they are unmodifiable. A tag points to a specific commit and no more commit can be added to a tag, with a tag you are sure to get the same code each time 
+ 
+question 8   What is the difference between Branch and Tag in Git?
+
+-  A branch is an active (mutable) line of development, it changes when a new commit is push, while a tag is an immutable line of development
+
+-  A branch is modifiable meaning new codes is added any time a new commit is pushed, while a tag is unmodifiable with a tag you will be sure to get the same code each time
+
+
+
 
 29. How to change git commit message after push (given that no one pulled from remote)?
    # git commit --amend -m "New Message"
