@@ -1,10 +1,36 @@
+Question 1
 What is git? 
+Git is an Open Source Distributed Version Control System. By control system, this means
+that Git is a content tracker. Git can be used to store content — in our case it is mostly used 
+to store code. 
+The code which is stored in Git keeps changing as developers keep adding more code. Also many developers can
+work in parallel. So Version Control System helps in handling this by maintaining a history of what changes have been 
+committed and keeps records of the various versions as they occur.
+By distributed Version Control System, we mean Git has a remote repository which is stored in a server and a local
+repository which is stored in the computer of each developer. This means that the code is not just stored in a central 
+server, but the full copy of the code is present in all the developers’ computers. Git is a Distributed Version Control 
+System since the code is present in every developer’s computer.
+
 Git is a distributed version control system. It helps to provide software management platform. 
 It enables versioning and collaboration. No servers needed.
 It ensures ensures integrity.
 It is robust. That is, many users can access it. 
 
 what is the different between git and github? Git is a version control system while Github is cloud based hosting service. Github manage Git repositories and Git track source code history.
+
+Question 2
+What is the difference between git and github?
+Git is a version control system that lets you manage and keep track of your source code history.
+GitHub is a cloud-based hosting service that lets you manage Git repositories.
+If you have open-source projects that use Git, then GitHub is designed to help you better manage them.
+
+Question 3 - What is the meaning of DVCS?
+A distributed version control system (DVCS) is a type of version control where the complete 
+codebase — including its full version history — is mirrored on every developer's computer.
+
+Question 4 - What is the abbreviation of SCM?
+Source Code Management
+
 
 29. How to change git commit message after push (given that no one pulled from remote)?
    # git commit --amend -m "New Message"
