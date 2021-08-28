@@ -61,7 +61,28 @@ question 8   What is the difference between Branch and Tag in Git?
 
 
 
-29. How to change git commit message after push (given that no one pulled from remote)?
+2t command delete a branch in the local repo?
+git branch -d <branch-name>
+18. What command delete a branch in the remote repo? 
+git push <remote-name> --delete  <branch-name>
+19. What is the branching strategy you are following in Landmark Technologies? 
+ In Landmark, we have minimum of 3 branches. We deploy from dev branch to dev environmnet, from stage to QA/UAT environmnet, and from master branch to the production environment. 
+ 
+   1) development:
+ 
+   2) stage:
+ 
+   3) master :  
+    on top of master if anything goes wrong we'll create a bugfixes or feature to add new features  
+     
+ 
+20.How many branches do you maintain in Landmark?
+In landmark, we maintain a minimum of 3 branches 
+Development branch
+Stage branch
+Master branch
+And code in development branch will go to development environment 
+9. How to change git commit message after push (given that no one pulled from remote)?
    # git commit --amend -m "New Message"
    # example : git commit --amend -m "This is an updated commit message"
    # Good practice, write Good Commit Messages before committing
