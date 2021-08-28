@@ -87,7 +87,10 @@ And code in development branch will go to development environment
    # example : git commit --amend -m "This is an updated commit message"
    # Good practice, write Good Commit Messages before committing
 
-Q30 How to rename the branch name?
+Q30 t is git cherry-pick and what does it do ? 
+In Landmark we use $git cherry-pick <commitID>  to choose a commit 21. What is git cherry-pick and what does it do ? 
+In Landmark we use $git cherry-pick <commitID>  to choose a commit 21. What is git cherry-pick and what does it do ? 
+In Landmark we use $git cherry-pick <commitID>  to choose a commit How to rename the branch name?
    # git branch -m <oldname> <newname>
    # git branch -m <newname> if you are already in the in the branch.
 
