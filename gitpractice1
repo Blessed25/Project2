@@ -65,11 +65,15 @@ question 8   What is the difference between Branch and Tag in Git?
 
 -  A branch is modifiable meaning new codes is added any time a new commit is pushed, while a tag is unmodifiable with a tag you will be sure to get the same code each time
 
-
-
-2t ll you create a branch and when will you create a tag? 
+2t ll you create a branch and when will you create a tag?
 In Landmark we create branches to start a new line of development, while tags are created to signal completion of development activities
 Tags are used for product releases
+
+9. How to change git commit message after push (given that no one pulled from remote)?
+   # git commit --amend -m "New Message"
+   # example : git commit --amend -m "This is an updated commit message"
+   # Good practice, write Good Commit Messages before committing
+
 10. What does “git add” command do? 
 It moves one or more files from working to staging area
 11. What is the command to revert the code from staging area to working area? 
@@ -97,11 +101,31 @@ In landmark, we maintain a minimum of 3 branches
 Development branch
 Stage branch
 Master branch
-And code in development branch will go to development environment 
-9. How to change git commit message after push (given that no one pulled from remote)?
-   # git commit --amend -m "New Message"
-   # example : git commit --amend -m "This is an updated commit message"
-   # Good practice, write Good Commit Messages before committing
+And code in development branch will go to development environment
+
+21 
+ What is git cherry-pick?
+Git cherry-pick is a powerful command that enables arbitrary Git commits to be picked by reference and appended to the current working HEAD. Cherry picking is the act of picking a commit from a branch and applying it to another. It can be useful for undoing changes. For example, say a commit is accidently made to the wrong branch. You can switch to the correct branch and cherry-pick the commit to where it should belong. Git cherry pick will come in handy where there are fewer scenarios.It is also used for collaboration in the case where a product feature has both frontend and backend. The backend developer may deveop a commit that will be needed by the front end to make progress on their side of the project. In this case, they cherry pick the particular commit using the commit ID.Also, the git cherry pick command can be used for bug hotfixes where in the patch commit containing the bug is cherry picked etc. The command is git cherry pick commitID
+
+22 What is git rebase
+Rebase is one of two Git utilities that specializes in integrating changes from one branch onto another.On like Merge, Rebasing is most useful and easily visualized in the context of a feature branching workflow.From a content perspective, rebasing is changing the base of your branch from one commit to another making it appear as if you'd created your branch from a different commit. Internally, Git accomplishes this by creating new commits and applying them to the specified base. It's very important to understand that even though the branch looks the same, it's composed of entirely new commits.The primary reason for rebasing is to maintain a linear project history.
+
+ 23 What is PAT?
+Personal Access Tokens are an alternative to using passwords for authentication to GitHub when using the GitHub API or the command line.They are used to grant different users different priviledges to access and manage the GitHub API.To creat a PAT;go to Personal settings ---> Developer settings
+---> Personal access tokens ---> Generate New Token ---> Provide some info about token in Token 
+description input box ---> Select the appropriate Scopes and Click on Generate token button.
+
+24 What is SSH key and how do you generate ssh-key. Explain your experince using openSSH?
+echo "SSH keys are a way to identify trusted computers without involving passwords. You can generate an 
+SSH key and add the public key to your GitHub account.
+#ls -al ~/.ssh ---> To see if existing SSH keys are present in machine.
+Generate SSH Key
+# ssh-keygen -t rsa 
+Here-t --> Specifies the type of key to create. The possible values are "rsa" for protocol version 1 and "dsa" for protocol version 2.
+cat ~/.ssh/id_rsa.pub Add SSH key 
+to GitHub
+So far in the DevOps master class, we have been using open SSh to connect to our remote servers(instances) and remote repositories ( github). We either used passwords, private or public keys to connect via an SSH to terminals such as Gitbash, pUTTY, mobaxterm  to either run linux commands , write scripts, commit and push them in out git local and remote repos. We have also tested scripts and built using open SSH.  
+
 
 Q30 t is git cherry-pick and what does it do ? 
 In Landmark we use $git cherry-pick <commitID>  to choose a commit 21. What is git cherry-pick and what does it do ? 
