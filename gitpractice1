@@ -30,6 +30,13 @@ codebase — including its full version history — is mirrored on every develop
 
 Question 4 - What is the abbreviation of SCM?
 Source Code Management
+32.When should you use fetch, clone and pull command?
+
+Git fetch – command to use when you want to get changes in codes from the remote repo and update your local repo but will NOT merge with the local working copy.
+
+Git pull – command to use when you want to get changes in codes from the remote repo and update your local repo AND WILL merge with the local working copy.
+
+Git clone – command to use when you get the code from the repository into your local repo.
 
 Question 5 -  Write down 5 SCM names?
 
