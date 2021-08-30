@@ -125,7 +125,23 @@ Here-t --> Specifies the type of key to create. The possible values are "rsa" fo
 cat ~/.ssh/id_rsa.pub Add SSH key 
 to GitHub
 So far in the DevOps master class, we have been using open SSh to connect to our remote servers(instances) and remote repositories ( github). We either used passwords, private or public keys to connect via an SSH to terminals such as Gitbash, pUTTY, mobaxterm  to either run linux commands , write scripts, commit and push them in out git local and remote repos. We have also tested scripts and built using open SSH.  
+25 What is the default path for ssh keys?
+   The default path for ssh private key is ~/.ssh/id_rsa and public path for ssh key is ~/.ssh/id_rsa.pub
 
+26 How many file will generate if you create ssh keys and what are the file names?
+    Two, "rsa1" for protocol version 1 and "rsa" or "dsa" for protocol version 2.
+
+27 What is the difference between git & GitHub?
+   Git is an open-source distributed version control system which allows you to manage the variants of your project you’re working on by tracking the history of the changes made, while GitHub is a web-based Git repository hosting service that creates a centralized storage space in which users can store and access their web development projects from
+
+28 What are they git best practices while committing code WHICH need to be follow?
+   -Use branching strategy and pull requests.   
+   -Commit once you finish the task. 
+   -Avoid merge commits.
+   -Don’t commit Half-Done Work. 
+   -Test your code before you commit.
+   -Write good commit messages before you are committing. 
+   -Try to use git commands rather than GUI tools.
 
 Q30 t is git cherry-pick and what does it do ? 
 In Landmark we use $git cherry-pick <commitID>  to choose a commit 21. What is git cherry-pick and what does it do ? 
